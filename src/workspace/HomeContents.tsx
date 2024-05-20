@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import DatabaseContents from "./Home/DatabaseContents";
 
 interface HomeProps {
   timezone: string;

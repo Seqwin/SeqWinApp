@@ -112,7 +112,9 @@ async function createWindow() {
       if (splashWindow) {
         splashWindow.close();
       }
-      mainWindow.show();
+      if (mainWindow) {
+        mainWindow.show();
+      }
     }, 3e3);
   });
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {

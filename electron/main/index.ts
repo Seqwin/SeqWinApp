@@ -93,7 +93,9 @@ async function createWindow() {
       if (splashWindow) {
         splashWindow.close();
       }
-      mainWindow.show(); // Fcuk this error with the might of a 1000 sun
+      if (mainWindow) {
+        mainWindow.show(); // Fcuk this error with the might of a 1000 sun
+      }
     }, 3000); // Change this value to reduce the time in future
   });
 
