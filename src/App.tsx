@@ -73,7 +73,7 @@ const App: React.FC = () => {
         </button>
 
         <button
-          className="absolute bottom-14 bg-gray-800 p-3 hover:bg-red-700 text-white  rounded-none"
+          className="absolute bottom-12 bg-gray-800 p-3 hover:bg-red-700 text-white  rounded-none"
           onClick={() => setWorkspaceContent(<SettingsContents onTimezoneChange={handleTimezoneChange} />)}
           style={{ width: '100%' }}
         >
@@ -92,7 +92,7 @@ const App: React.FC = () => {
             />
           </svg>
         </button>
-        <div className="absolute bottom-0 left-0 m-5">
+        <button className="absolute bottom-0 left-0 m-0 rounded-none bg-gray-800">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -107,7 +107,7 @@ const App: React.FC = () => {
               d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9"
             />
           </svg>
-        </div>
+        </button>
       </div>
       {/* Workspace */}
       <div className="flex-1 bg-gray-700 text-black p-4 overflow-auto">
